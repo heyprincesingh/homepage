@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Home</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://www.digitaltrends.com/wp-content/uploads/2020/07/memoji_facecovering_seam_1.png?fit=3001%2C3001&p=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="scripit.js"></script>
+    <script src="https://kit.fontawesome.com/6201a58c3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="page-container">
+
+        <div id="container">
+
+            <div class="clock">
+                <p id="clockTime"></p>
+                <p id="AmPm"></p>
+            </div>
+            <div class="DayClock">
+                <p id="day"></p>
+            </div>
+
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_m9lwcxrc.json" background="transparent"
+                speed="1" style="width: 400px; height: 210px;" loop autoplay></lottie-player>
+
+            <input type="search" id="search" placeholder="Hey Prince! What do you wanna know ?"></input>
+
+            <div class="suggestion">
+
+                <a href="https://www.instagram.com" class="social-button social-button--instagram"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com" class="social-button social-button--youtube" aria-label="YouTube">
+                    <i class="fab fa-youtube" style="color:rgb(255, 0, 0)"></i>
+                </a>
+                <a href="https://www.facebook.com" class="social-button social-button--facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f" style="color:#3b5998"></i>
+                </a>
+                <a href="https://heyprincesingh.github.io" class="social-button social-button--codepen"
+                    aria-label="heyprincesingh">
+                    <img src="https://www.digitaltrends.com/wp-content/uploads/2020/07/memoji_facecovering_seam_1.png?fit=3001%2C3001&p=1"
+                        style="height: 80px; width: 80px;" alt="">
+                </a>
+                <a href="https://LinkedIn.com" class="social-button social-button--linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" style="color:#0A66C2"></i>
+                    <a href="https://mail.google.com/" class="social-button social-button--twitter" aria-label="G-mail">
+                        <i class="fa fa-google-plus" style="color:#c71610"></i>
+                    </a>
+                    <a href="https://github.com/heyprincesingh" class="social-button social-button--github"
+                        aria-label="GitHub">
+                        <i class="fab fa-github" style="color:#000000"></i>
+                    </a>
+            </div>
+            
+            <div id="quoteContainer"></div>
+
+        </div>
+
+        <div id="vanta-canvas">
+            <script src="background/three.min.js"></script>
+            <script src="background/vanta.clouds.min.js"></script>
+            <script type="text/javascript">
+                VANTA.CLOUDS({
+                    el: "#page-container",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 100.00,
+                    minWidth: 100.00
+                })
+            </script>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

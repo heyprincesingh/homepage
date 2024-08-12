@@ -1,0 +1,112 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'ClockFont', sans-serif; 
+    box-sizing: border-box;
+}  
+
+ @font-face {
+    font-family: 'ClockFont';
+    src: url('./images/digital-7.ttf') format('truetype');
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #1c1c1c; */
+    /* background-image: url(https://www.pngmart.com/files/7/Abstract-Wave-PNG-Transparent.png); */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+#page-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border: 3px solid #1c1c1c;  
+}
+
+.clock{
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    color: white;
+    text-shadow: -1px 1px 0 black, -1px 1px 0 black, -1px 1px 0 black, -1px 1px 0 black;
+    display: flex;
+    font-family: 'ClockFont';
+    font-size: 60px;
+    align-items: baseline;
+}
+.DayClock{
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    color: white;
+    text-shadow: -1px 1px 0 black, -1px 1px 0 black, -1px 1px 0 black, -1px 1px 0 black;
+    display: flex;
+    font-family: 'ClockFont';
+    font-size: 30px;
+    align-items: baseline;
+}
+
+#AmPm{
+    font-size: 40px;
+}
+
+#quoteContainer{
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 1px 0 white, -1px 1px 0 white, -1px 1px 0 white, -1px 1px 0 white;
+    font-weight: 400;
+    font-size: 19px;
+    border-color: #d62424;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    bottom: 5px;
+}
+#search{
+    width: 600px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 15px;
+    background-color: #ffffff5b;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px #1c1c1c5d solid;
+    font-family: sans-serif;
+}
+
+.suggestion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+a{
+    padding: 20px;
+    font-size: 40px;
+}
+a:hover{
+    transform: translate(0,-10px);
+    transition: 0.2s ease-in;
+}
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
